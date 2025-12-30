@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timor | Flutter Developer</title>
+
+<style>
+:root{
+  --main:#00e5ff;
+  --bg:#0a0f14;
+  --glass:rgba(255,255,255,0.08);
+  --border:rgba(255,255,255,0.15);
+}
+
+body{
+  margin:0;
+  font-family:Segoe UI,sans-serif;
+  background:linear-gradient(135deg,#0a0f14,#05080c);
+  color:#fff;
+}
+
+/* ===== HERO CARD ===== */
+.hero{
+  max-width:1000px;
+  margin:80px auto;
+  padding:40px;
+  background:var(--glass);
+  backdrop-filter:blur(12px);
+  border:1px solid var(--border);
+  border-radius:22px;
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.hero img{
+  width:220px;
+  height:220px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--main);
+}
+
+.hero-text h1{
+  margin:0;
+  font-size:44px;
+}
+.hero-text span{color:var(--main)}
+
+.hero-text h3{
+  margin:10px 0;
+  font-weight:400;
+  opacity:.85;
+}
+
+.hero-text p{
+  max-width:500px;
+  opacity:.75;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:var(--main);
+  color:#000;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
+}
+
+h2{
+  text-align:center;
+  margin-bottom:35px;
+}
+
+/* ===== SKILLS ===== */
+.skill{
+  margin-bottom:22px;
+}
+
+.skill span{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:6px;
+}
+
+.bar{
+  height:8px;
+  background:rgba(255,255,255,.15);
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.bar div{
+  height:100%;
+  background:var(--main);
+}
+
+/* ===== PROJECT ===== */
+.project{
+  background:var(--glass);
+  border:1px solid var(--border);
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:30px;
+  opacity:.6;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+  <img src="https://i.postimg.cc/B6F4GWyL/IMG-0845.jpg">
+
+  <div class="hero-text">
+    <h1>I'm <span>Timor</span></h1>
+    <h3>Flutter Developer</h3>
+    <p>
+      Flutter developer from Egypt focused on building
+      clean, scalable and user-friendly mobile applications.
+    </p>
+    <a class="btn" href="mailto:timor.2005a@gmail.com">Hire Me</a>
+  </div>
+</div>
+
+<section>
+<h2>About Me</h2>
+<p style="text-align:center;max-width:650px;margin:auto">
+I specialize in Flutter & Dart, delivering modern mobile apps
+with clean UI and solid performance.
+</p>
+</section>
+
+<section>
+<h2>My Skills</h2>
+
+<div class="skill">
+<span><b>Dart</b><b>90%</b></span>
+<div class="bar"><div style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<span><b>Flutter</b><b>95%</b></span>
+<div class="bar"><div style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<span><b>Git & GitHub</b><b>85%</b></span>
+<div class="bar"><div style="width:85%"></div></div>
+</div>
+
+</section>
+
+<section>
+<h2>Projects</h2>
+<div class="project">
+<h3>Flutter Portfolio</h3>
+<p>Collection of Flutter demo & practice projects.</p>
+<a href="https://github.com/Timor-dev" style="color:var(--main)">View on GitHub</a>
+</div>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p style="text-align:center">
+<a href="mailto:timor.2005a@gmail.com" style="color:var(--main)">
+timor.2005a@gmail.com
+</a>
+</p>
+</section>
+
+<footer>
+© 2025 Timor
+</footer>
+
+</body>
+</html>
